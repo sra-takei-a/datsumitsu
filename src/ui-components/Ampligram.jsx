@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Divider, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
@@ -20,12 +20,11 @@ export default function Ampligram(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Ampligram")}
+      {...rest}
     >
       <Flex
         gap="16px"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -37,7 +36,6 @@ export default function Ampligram(props) {
       >
         <Flex
           gap="16px"
-          direction="row"
           width="568px"
           alignItems="center"
           grow="1"
@@ -77,7 +75,6 @@ export default function Ampligram(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="fit-content"
           justifyContent="flex-end"
           alignItems="center"
@@ -128,7 +125,6 @@ export default function Ampligram(props) {
       ></Image>
       <Flex
         gap="16px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -139,7 +135,6 @@ export default function Ampligram(props) {
       >
         <Flex
           gap="24px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -181,7 +176,6 @@ export default function Ampligram(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="472px"
           justifyContent="flex-end"
           alignItems="center"

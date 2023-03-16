@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import {
   getOverrideProps,
   getOverridesFromVariants,
@@ -57,20 +57,19 @@ export default function HeroLayout1(props) {
   return (
     <Flex
       gap="0"
-      direction="row"
       width="1440px"
       height="500px"
       justifyContent="center"
       alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...rest}
       {...getOverrideProps(overrides, "HeroLayout1")}
+      {...rest}
     >
       <Flex
         gap="10px"
         direction="column"
-        height="500px"
+        width="720px"
         justifyContent="center"
         alignItems="center"
         grow="1"
@@ -174,7 +173,6 @@ export default function HeroLayout1(props) {
           <Button
             display="flex"
             gap="0"
-            direction="row"
             width="fit-content"
             justifyContent="center"
             alignItems="center"
@@ -191,7 +189,7 @@ export default function HeroLayout1(props) {
       <Flex
         gap="10px"
         direction="column"
-        height="500px"
+        width="720px"
         justifyContent="center"
         alignItems="center"
         grow="1"

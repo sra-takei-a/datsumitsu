@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Divider, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function SideBar(props) {
@@ -13,20 +13,19 @@ export default function SideBar(props) {
   return (
     <Flex
       gap="10px"
-      direction="row"
       width="385px"
       height="762px"
       alignItems="flex-start"
       position="relative"
       padding="32px 0px 32px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "SideBar")}
+      {...rest}
     >
       <Flex
         gap="32px"
         direction="column"
-        height="698px"
+        width="385px"
         grow="1"
         basis="385px"
         alignSelf="stretch"
@@ -83,7 +82,6 @@ export default function SideBar(props) {
             ></Text>
             <Flex
               gap="16px"
-              direction="row"
               width="fit-content"
               alignItems="center"
               shrink="0"
@@ -140,7 +138,6 @@ export default function SideBar(props) {
             </Flex>
             <Flex
               gap="16px"
-              direction="row"
               width="fit-content"
               alignItems="center"
               shrink="0"
@@ -231,7 +228,6 @@ export default function SideBar(props) {
             >
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -288,7 +284,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -345,7 +340,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -402,7 +396,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -459,7 +452,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -516,7 +508,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -573,7 +564,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -630,7 +620,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -710,7 +699,6 @@ export default function SideBar(props) {
           ></Divider>
           <Flex
             gap="129px"
-            direction="row"
             width="385px"
             alignItems="center"
             shrink="0"
@@ -720,7 +708,6 @@ export default function SideBar(props) {
           >
             <Flex
               gap="16px"
-              direction="row"
               width="168px"
               alignItems="center"
               grow="1"

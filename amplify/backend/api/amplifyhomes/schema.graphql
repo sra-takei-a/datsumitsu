@@ -1,6 +1,47 @@
+type Genre @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
+
+type GenreMaster @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  liff_user_id: String
+  user_name: String
+}
+
+type Facility @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  address: String
+  row: Int
+  longitude: Float
+  latitude: Float
+  rating: Int
+  besttime_venue_id: String
+}
+
 type Home @model @auth(rules: [{allow: public}]) {
   id: ID!
   address: String
   image_url: String
   price: Float
+}
+
+
+type Venues {
+  venue_name: String
+}
+
+type FilterVenues {
+  venues: [Venues]
+}
+
+type Query {
+  getFilterVenues(api_key_private: String, lat: Float, lng: Float, radius: Int): FilterVenues
+    @http(url: "https://besttime.app/api/v1/venues/filter")
 }

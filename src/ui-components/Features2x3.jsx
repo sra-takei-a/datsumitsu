@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Features2x3(props) {
@@ -20,12 +20,11 @@ export default function Features2x3(props) {
       position="relative"
       padding="40px 140px 40px 140px"
       backgroundColor="rgba(92,102,112,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Features2x3")}
+      {...rest}
     >
       <Flex
         gap="24px"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -59,7 +58,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -167,7 +165,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -275,7 +272,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -395,7 +391,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -503,7 +498,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -611,7 +605,6 @@ export default function Features2x3(props) {
           >
             <Flex
               gap="24px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"

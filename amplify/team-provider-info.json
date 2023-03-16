@@ -1,15 +1,26 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyhomes-staging-40507-authRole",
-      "UnauthRoleArn": "arn:aws:iam::691460774223:role/amplify-amplifyhomes-staging-40507-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::691460774223:role/amplify-amplifyhomes-staging-40507-authRole",
-      "Region": "eu-west-2",
-      "DeploymentBucketName": "amplify-amplifyhomes-staging-40507-deployment",
-      "UnauthRoleName": "amplify-amplifyhomes-staging-40507-unauthRole",
-      "StackName": "amplify-amplifyhomes-staging-40507",
-      "StackId": "arn:aws:cloudformation:eu-west-2:691460774223:stack/amplify-amplifyhomes-staging-40507/0966a520-5325-11ec-b367-027cd13ae230",
-      "AmplifyAppId": "dafvyl12im7ac"
+      "AuthRoleName": "amplify-amplifyhomes-dev-41202-authRole",
+      "UnauthRoleArn": "arn:aws:iam::664412421699:role/amplify-amplifyhomes-dev-41202-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::664412421699:role/amplify-amplifyhomes-dev-41202-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-amplifyhomes-dev-41202-deployment",
+      "UnauthRoleName": "amplify-amplifyhomes-dev-41202-unauthRole",
+      "StackName": "amplify-amplifyhomes-dev-41202",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:664412421699:stack/amplify-amplifyhomes-dev-41202/a15392e0-f761-11ec-8a69-06ff7e8f15f1",
+      "AmplifyAppId": "d6tds5gz91gt8"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d6tds5gz91gt8",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "amplifyhomes": {}
+      }
     }
   }
 }

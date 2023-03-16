@@ -5,82 +5,22 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Text, View } from "@aws-amplify/ui-react";
+import { Text, View } from "@aws-amplify/ui-react";
 export default function Datsumitsu2(props) {
-  const { overrides, ...rest } = props;
+  const { genre, overrides, ...rest } = props;
   return (
     <View
       width="390px"
-      height="1002px"
+      height="157px"
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Datsumitsu2")}
+      {...rest}
     >
-      <Flex
-        gap="16px"
-        position="absolute"
-        top="158px"
-        left="-7px"
-        direction="column"
-        width="441px"
-        height="644px"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 1")}
-      >
-        <Flex
-          gap="0"
-          direction="column"
-          width="396px"
-          justifyContent="center"
-          shrink="0"
-          position="relative"
-          borderRadius="16px 16px 16px 16px"
-          padding="16px 16px 16px 16px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Card31482743")}
-        ></Flex>
-        <Flex
-          gap="0"
-          direction="column"
-          width="396px"
-          justifyContent="center"
-          shrink="0"
-          position="relative"
-          borderRadius="16px 16px 16px 16px"
-          padding="16px 16px 16px 16px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Card31483281")}
-        ></Flex>
-        <Flex
-          gap="0"
-          direction="column"
-          width="396px"
-          justifyContent="center"
-          shrink="0"
-          position="relative"
-          borderRadius="16px 16px 16px 16px"
-          padding="16px 16px 16px 16px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Card31483323")}
-        ></Flex>
-        <Flex
-          gap="0"
-          direction="column"
-          width="396px"
-          justifyContent="center"
-          shrink="0"
-          position="relative"
-          borderRadius="16px 16px 16px 16px"
-          padding="16px 16px 16px 16px"
-          backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Card31483365")}
-        ></Flex>
-      </Flex>
       <Text
         fontFamily="Inter"
         fontSize="26px"
@@ -118,7 +58,8 @@ export default function Datsumitsu2(props) {
         left="28px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="スポーツジム"
+        id="genre_name"
+        children={genre?.name}
         {...getOverrideProps(overrides, "\u30B9\u30DD\u30FC\u30C4\u30B8\u30E0")}
       ></Text>
       <Text

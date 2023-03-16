@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import {
   Button,
@@ -24,8 +24,8 @@ export default function ContactUs(props) {
       direction="column"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...rest}
       {...getOverrideProps(overrides, "ContactUs")}
+      {...rest}
     >
       <Flex
         gap="8px"
@@ -82,7 +82,6 @@ export default function ContactUs(props) {
       </Flex>
       <Flex
         gap="16px"
-        direction="row"
         width="fit-content"
         alignItems="flex-start"
         shrink="0"
@@ -230,7 +229,6 @@ export default function ContactUs(props) {
       <Button
         display="flex"
         gap="0"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -245,7 +243,6 @@ export default function ContactUs(props) {
       ></Button>
       <Flex
         gap="24px"
-        direction="row"
         width="fit-content"
         alignItems="flex-start"
         shrink="0"
@@ -255,7 +252,6 @@ export default function ContactUs(props) {
       >
         <Flex
           gap="8px"
-          direction="row"
           width="fit-content"
           alignItems="center"
           shrink="0"
@@ -312,7 +308,6 @@ export default function ContactUs(props) {
         </Flex>
         <Flex
           gap="8px"
-          direction="row"
           width="fit-content"
           alignItems="center"
           shrink="0"

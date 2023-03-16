@@ -1,5 +1,7 @@
 {
   "AppSyncApiName": "amplifyhomes",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "CreateAPIKey": 1,
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-01-17T05:30:42.647Z"
 }

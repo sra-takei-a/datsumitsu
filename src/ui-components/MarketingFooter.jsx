@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
@@ -16,8 +16,8 @@ export default function MarketingFooter(props) {
       height="400px"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...rest}
       {...getOverrideProps(overrides, "MarketingFooter")}
+      {...rest}
     >
       <View
         position="absolute"
@@ -56,7 +56,6 @@ export default function MarketingFooter(props) {
         position="absolute"
         top="40px"
         right="140px"
-        direction="row"
         alignItems="flex-start"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 405")}

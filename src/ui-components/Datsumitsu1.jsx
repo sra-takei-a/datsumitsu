@@ -5,62 +5,40 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import {
   getOverrideProps,
   useDataStoreCreateAction,
   useStateMutationAction,
 } from "@aws-amplify/ui-react/internal";
-import { Facility } from "../models";
+import { Genre } from "../models";
 import { schema } from "../models/schema";
 import { Button, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function Datsumitsu1(props) {
-  const { userProp, facilityProp, overrides, ...rest } = props;
+  const { clickButton, overrides, ...rest } = props;
   const [textFieldValue, setTextFieldValue] = useStateMutationAction("");
   const buttonOnClick = useDataStoreCreateAction({
     fields: { name: textFieldValue },
-    model: Facility,
+    model: Genre,
     schema: schema,
   });
   return (
     <View
       width="390px"
-      height="623px"
+      height="238px"
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "Datsumitsu1")}
+      {...rest}
     >
-      <TextField
-        display="flex"
-        gap="8px"
-        position="absolute"
-        top="86px"
-        left="45px"
-        direction="column"
-        width="300px"
-        justifyContent="center"
-        padding="0px 0px 0px 0px"
-        placeholder="ex. スポーツジム"
-        size="default"
-        isDisabled={false}
-        labelHidden={false}
-        variation="default"
-        value={textFieldValue}
-        onChange={(event) => {
-          setTextFieldValue(event.target.value);
-        }}
-        {...getOverrideProps(overrides, "TextField")}
-      ></TextField>
       <Button
         display="flex"
         gap="0"
         position="absolute"
         top="166px"
         left="99px"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         size="default"
@@ -95,6 +73,28 @@ export default function Datsumitsu1(props) {
           "\u4ECA\u304B\u3089\u884C\u304D\u305F\u3044\u5834\u6240\u306F\uFF1F"
         )}
       ></Text>
+      <TextField
+        display="flex"
+        gap="8px"
+        position="absolute"
+        top="79px"
+        left="45px"
+        direction="column"
+        width="300px"
+        justifyContent="center"
+        padding="0px 0px 0px 0px"
+        placeholder="ex. RESTAURANT"
+        size="default"
+        isDisabled={false}
+        labelHidden={false}
+        variation="default"
+        id="search_box"
+        value={textFieldValue}
+        onChange={(event) => {
+          setTextFieldValue(event.target.value);
+        }}
+        {...getOverrideProps(overrides, "TextField")}
+      ></TextField>
     </View>
   );
 }

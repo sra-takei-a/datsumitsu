@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import MyIcon from "./MyIcon";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
@@ -18,12 +18,11 @@ export default function CommentCard(props) {
       position="relative"
       padding="16px 16px 16px 16px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "CommentCard")}
+      {...rest}
     >
       <Flex
         gap="16px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -34,7 +33,6 @@ export default function CommentCard(props) {
       >
         <Flex
           gap="9px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -74,7 +72,6 @@ export default function CommentCard(props) {
       </Flex>
       <Flex
         gap="16px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -105,7 +102,6 @@ export default function CommentCard(props) {
         >
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -116,7 +112,6 @@ export default function CommentCard(props) {
           >
             <Flex
               gap="16px"
-              direction="row"
               width="fit-content"
               alignItems="flex-start"
               shrink="0"
@@ -182,7 +177,6 @@ export default function CommentCard(props) {
             </Flex>
             <Flex
               gap="0"
-              direction="row"
               width="66px"
               justifyContent="flex-end"
               alignItems="flex-start"
@@ -232,7 +226,6 @@ export default function CommentCard(props) {
       </Flex>
       <Flex
         gap="80px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -243,7 +236,6 @@ export default function CommentCard(props) {
       >
         <Flex
           gap="16px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -283,7 +275,6 @@ export default function CommentCard(props) {
         </Flex>
         <Flex
           gap="16px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -323,7 +314,6 @@ export default function CommentCard(props) {
         </Flex>
         <Flex
           gap="16px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"

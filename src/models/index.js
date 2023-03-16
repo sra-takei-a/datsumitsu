@@ -4,10 +4,14 @@ import { schema } from './schema';
 
 
 
-const { Facility, User, Home } = initSchema(schema);
+const { Genre, GenreMaster, User, Facility, Home, FilterVenues, Venues } = initSchema(schema);
 
 export {
-  Facility,
+  Genre,
+  GenreMaster,
   User,
-  Home
+  Facility,
+  Home,
+  FilterVenues,
+  Venues
 };

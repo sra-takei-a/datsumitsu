@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Rating, Text } from "@aws-amplify/ui-react";
 export default function ActionCard(props) {
@@ -19,8 +19,8 @@ export default function ActionCard(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "ActionCard")}
+      {...rest}
     >
       <Image
         height="408px"
@@ -94,7 +94,6 @@ export default function ActionCard(props) {
         <Rating
           display="flex"
           gap="8px"
-          direction="row"
           width="174px"
           alignItems="center"
           shrink="0"
@@ -125,7 +124,6 @@ export default function ActionCard(props) {
         <Button
           display="flex"
           gap="0"
-          direction="row"
           justifyContent="center"
           alignItems="center"
           shrink="0"

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import {
   getOverrideProps,
   getOverridesFromVariants,
@@ -322,8 +322,8 @@ export default function MyIcon(props) {
           style: { transform: "translate(4.17%, 12.5%)" },
         },
       ]}
-      {...rest}
       {...getOverrideProps(overrides, "MyIcon")}
+      {...rest}
     ></Icon>
   );
 }

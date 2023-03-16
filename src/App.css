@@ -1,29 +1,95 @@
-.App {
-  text-align: center;
+
+
+body{
+    margin: unset;
+    background-color: rgb(135, 206, 235);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#title{
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resultImg{
+    width: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root{
+    width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.App{
+    padding: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: unset;
+}
+
+select{
+    font-size: 1.5rem;
+    border: 3px solid black;
+    margin: 0.5rem 0;
+    display: block;
+    width: 100%;
+}
+
+#genre_select_wrap{
+    margin: 1rem 0;
+}
+
+#genre_select_wrap h3,#genre_select_wrap form,#genre_select_wrap button{
+    text-align: center;
+}
+
+.rating{
+    color: orange;
+}
+
+#search{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 3px solid blue;
+    background-color: rgba(0, 0, 255, 0.76);
+    border-radius: 10px;
+    color: white;
+    padding: 0.25rem 4rem;
+}
+
+.resultBox_wrap{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.resultBox{
+    width: calc(60% - 1rem);
+    vertical-align: top;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.resultBox h1,.resultBox h2{
+    margin: 0.25rem 0;
+}
+
+.go_now,.go_after{
+    margin: 0.5rem;
+}
+
+@media (max-width:767px){
+    .resultImg{
+        width: 100%;
+        text-align: center;
+    }
+    .resultBox{
+        width: 100%;
+        margin-left: unset;
+    }
+}
+
+@media (max-width:575px){
+    .App{
+        padding: 2rem 0.5rem !important;
+    }
 }

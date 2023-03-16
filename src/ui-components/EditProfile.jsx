@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import {
   Button,
@@ -27,8 +27,8 @@ export default function EditProfile(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "EditProfile")}
+      {...rest}
     >
       <Flex
         gap="24px"
@@ -42,7 +42,6 @@ export default function EditProfile(props) {
       >
         <Flex
           gap="16px"
-          direction="row"
           alignItems="center"
           shrink="0"
           alignSelf="stretch"
@@ -110,7 +109,6 @@ export default function EditProfile(props) {
         ></Divider>
         <Flex
           gap="16px"
-          direction="row"
           alignItems="center"
           shrink="0"
           alignSelf="stretch"
@@ -226,7 +224,6 @@ export default function EditProfile(props) {
         <Button
           display="flex"
           gap="0"
-          direction="row"
           width="fit-content"
           justifyContent="center"
           alignItems="center"

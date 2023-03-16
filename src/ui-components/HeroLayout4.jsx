@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Text, TextField } from "@aws-amplify/ui-react";
 export default function HeroLayout4(props) {
@@ -20,8 +20,8 @@ export default function HeroLayout4(props) {
       position="relative"
       padding="160px 160px 160px 160px"
       backgroundColor="rgba(0,0,0,1)"
-      {...rest}
       {...getOverrideProps(overrides, "HeroLayout4")}
+      {...rest}
     >
       <Flex
         gap="24px"
@@ -99,7 +99,6 @@ export default function HeroLayout4(props) {
         ></Text>
         <Flex
           gap="8px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -126,7 +125,6 @@ export default function HeroLayout4(props) {
           <Button
             display="flex"
             gap="0"
-            direction="row"
             width="fit-content"
             justifyContent="center"
             alignItems="center"

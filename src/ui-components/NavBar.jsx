@@ -5,7 +5,7 @@
  **************************************************************************/
 
 /* eslint-disable */
-import React from "react";
+import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import {
   Flex,
@@ -20,21 +20,18 @@ export default function NavBar(props) {
   return (
     <Flex
       gap="20px"
-      direction="row"
       width="1440px"
       justifyContent="center"
       alignItems="center"
       position="relative"
       padding="24px 32px 24px 32px"
       backgroundColor="rgba(255,255,255,1)"
-      {...rest}
       {...getOverrideProps(overrides, "NavBar")}
+      {...rest}
     >
       <Flex
         gap="2px"
-        direction="row"
         width="fit-content"
-        height="45px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -79,7 +76,6 @@ export default function NavBar(props) {
       </Flex>
       <Flex
         gap="40px"
-        direction="row"
         width="633.5px"
         alignItems="center"
         grow="1"
@@ -164,7 +160,6 @@ export default function NavBar(props) {
       </Flex>
       <Flex
         gap="32px"
-        direction="row"
         width="633.5px"
         justifyContent="flex-end"
         alignItems="center"

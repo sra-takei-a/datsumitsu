@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "Facility": {
-            "name": "Facility",
+        "Genre": {
+            "name": "Genre",
             "fields": {
                 "id": {
                     "name": "id",
@@ -16,26 +16,53 @@ export const schema = {
                     "type": "String",
                     "isRequired": false,
                     "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
                 }
             },
             "syncable": true,
-            "pluralName": "Facilities",
+            "pluralName": "Genres",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "GenreMaster": {
+            "name": "GenreMaster",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                }
+            },
+            "syncable": true,
+            "pluralName": "GenreMasters",
             "attributes": [
                 {
                     "type": "model",
@@ -82,26 +109,95 @@ export const schema = {
                     "type": "String",
                     "isRequired": false,
                     "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
                 }
             },
             "syncable": true,
             "pluralName": "Users",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "Facility": {
+            "name": "Facility",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "address": {
+                    "name": "address",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "row": {
+                    "name": "row",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "longitude": {
+                    "name": "longitude",
+                    "isArray": false,
+                    "type": "Float",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "latitude": {
+                    "name": "latitude",
+                    "isArray": false,
+                    "type": "Float",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "rating": {
+                    "name": "rating",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "besttime_venue_id": {
+                    "name": "besttime_venue_id",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                }
+            },
+            "syncable": true,
+            "pluralName": "Facilities",
             "attributes": [
                 {
                     "type": "model",
@@ -155,22 +251,6 @@ export const schema = {
                     "type": "Float",
                     "isRequired": false,
                     "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
                 }
             },
             "syncable": true,
@@ -200,6 +280,35 @@ export const schema = {
         }
     },
     "enums": {},
-    "nonModels": {},
-    "version": "6bac21ba91f51ac2c053ff15363b3393"
+    "nonModels": {
+        "FilterVenues": {
+            "name": "FilterVenues",
+            "fields": {
+                "venues": {
+                    "name": "venues",
+                    "isArray": true,
+                    "type": {
+                        "nonModel": "Venues"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true
+                }
+            }
+        },
+        "Venues": {
+            "name": "Venues",
+            "fields": {
+                "venue_name": {
+                    "name": "venue_name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                }
+            }
+        }
+    },
+    "codegenVersion": "3.3.4",
+    "version": "cf96b48c26747d93159eed84774e9d8c"
 };
