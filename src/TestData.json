@@ -1,0 +1,122 @@
+[
+    {
+        "cat":"飲食店",
+        "item":[
+            {
+                "name":"ガスト 茗荷谷駅前店",
+                "address":"東京都 文京区 大塚 １丁目-4-10 銀嶺ビル 2F",
+                "rating":3.2,
+                "busy":20,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/eat.png"
+            },
+            {
+                "name":"丼太郎",
+                "address":"東京都文京区小日向４丁目５−９",
+                "rating":4.2,
+                "busy":40,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/eat.png"
+            },
+            {
+                "name":"日高屋 茗荷谷店",
+                "address":"東京都文京区小石川５丁目４−５",
+                "rating":3.4,
+                "busy":60,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/eat.png"
+            },
+            {
+                "name":"金門飯店",
+                "address":"東京都文京区大塚１丁目４−１５",
+                "rating":3.7,
+                "busy":80,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/eat.png"
+            },
+            {
+                "name":"サイゼリヤ 茗荷谷店",
+                "address":"東京都文京区小日向４丁目６−１９ 共立会館ﾋﾞﾙ 1",
+                "rating":3.5,
+                "busy":100,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/eat.png"
+            }
+        ]
+    },
+    {
+        "cat":"コンビニ",
+        "item":[
+            {
+                "name":"ファミリーマート 大塚一丁目店",
+                "address":"東京都文京区大塚1丁目5-18",
+                "rating":3.4,
+                "busy":20,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/cs.png"
+            },
+            {
+                "name":"ナチュラルローソン 茗荷谷駅前店",
+                "address":"東京都文京区大塚1丁目4-15",
+                "rating":2.6,
+                "busy":40,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/cs.png"
+            },
+            {
+                "name":"ローソン 小石川五丁目店",
+                "address":"東京都文京区小石川5丁目6-10",
+                "rating":3.1,
+                "busy":60,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/cs.png"
+            },
+            {
+                "name":"セブン-イレブン 茗荷谷駅前店",
+                "address":"東京都文京区大塚1丁目4-10 銀嶺ビル 1階",
+                "rating":3.3,
+                "busy":80,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/cs.png"
+            },
+            {
+                "name":"ローソン 茗荷谷春日通店",
+                "address":"東京都文京区小石川5丁目5-7 中澤ビル",
+                "rating":3.0,
+                "busy":100,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/cs.png"
+            }
+        ]
+    },
+    {
+        "cat":"書店",
+        "item":[
+            {
+                "name":"芳文堂書店",
+                "address":"東京都文京区春日2丁目13-1",
+                "rating":4.1,
+                "busy":20,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/book.png"
+            },
+            {
+                "name":"誠信堂書店",
+                "address":"東京都文京区大塚4丁目52-5",
+                "rating":3.3,
+                "busy":40,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/book.png"
+            },
+            {
+                "name":"港や書店",
+                "address":"東京都文京区大塚3丁目43-3 小石川ハイツ星座 103号",
+                "rating":3.7,
+                "busy":60,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/book.png"
+            },
+            {
+                "name":"大和書店",
+                "address":"東京都文京区千石3丁目17-13 大和書店",
+                "rating":5.0,
+                "busy":80,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/book.png"
+            },
+            {
+                "name":"沼田書店",
+                "address":"東京都文京区目白台3丁目12-8",
+                "rating":5.0,
+                "busy":100,
+                "img":"https://dev.d6tds5gz91gt8.amplifyapp.com/test_images/book.png"
+            }
+        ]
+    }
+]
